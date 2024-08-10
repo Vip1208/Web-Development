@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/contact-me">
+        <label for="username">username</label>
+        <input type="text" id="username" placeholder="Enter email"><br>
+        <label for="password">password</label>
+        <input type="password" placeholder="enter password" required = "true">
+        <input type="submit"><br>
+        <label for="date">date</label>
+        <input type="date" id="date">
+        File : <input type="file">
+        range : <input type="range"><br>
+
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender" value="male"><br>
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" value="female"><br>
+        <label for="male">other</label>
+        <input type="radio" id="other" name="gender" value="other"><br>
+
+        <label for="banana">banana</label>
+        <input type="checkbox" id="banana" name="fruit" value="banana"><br>
+        <label for="apple">apple</label>
+        <input type="checkbox" id="apple"name="fruit" value="apple"><br>
+        <label for="grapes">grapes</label>
+        <input type="checkbox" id="grapes"name="fruit" value="grapes"><br>
+        <label for="orange">orange</label>
+        <input type="checkbox" id="orange"name="fruit" value="orange"><br>
+
+        <label for="country">Select a country to visit</label>
+        <select name="country" id="country">
+            <option value="America">America</option>
+            <option value="Argentina">Argentina</option>
+            <option value="France">France</option>
+            <option value="South africa">South africa</option>
+            <option value="India">India</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Uganda">Uganda</option>
+
+        <br>
+        <textarea name="story" id="text" rows="5" cols="10">
+                Write something here!!
+        </textarea>
+    </form>
+</body>
+</html>

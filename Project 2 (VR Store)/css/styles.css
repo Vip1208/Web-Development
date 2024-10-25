@@ -1,0 +1,691 @@
+:root{
+    --grey:#3E3E3E;
+    --main-blue:#33C6DD;
+}
+
+body{
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+.container{
+    width: 1440px;
+    max-width: 90%;
+    margin: auto;
+}
+
+header{
+    height: 70px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style-type: none;  /*to remove bulltes*/
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 26px;
+}
+
+header nav ul li.menu-icon{
+    display: none;
+}
+
+header nav ul li:first-of-type{
+    margin-right: 0;
+}
+
+header .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header section.logo{
+    font-size: 27px;
+}
+
+header section.logo span.blue-dot{
+    background-color: var(--main-blue);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;   
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 15px;
+}
+
+header nav ul li a:hover{
+    color: #33C6DD;
+}
+
+section.hero{
+    position: relative;
+}
+
+section.hero img{
+   width: 100%;
+   height: auto;
+}
+
+section.hero .hero-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+section.hero h1,
+section.hero p{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    max-width: 495px;
+}
+section.hero h1{
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 56px;
+}
+
+section.hero p{
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+}
+
+section.hero button{
+    width: 200px;
+    height: 50px;
+    background-color: var(--main-blue);
+    border: 1px solid #33C6DD;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+section.hero button:hover{
+    background-color: white;
+    border: 1px solid #33C6DD;
+    color: #33C6DD;
+    cursor: pointer;
+}
+
+
+section.best-seller{
+    padding-top: 90px;
+}
+
+
+section.best-seller h2{
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+
+section.best-seller hr{
+    width: 60px;
+    height: 6px;
+    background-color: var(--main-blue);
+    margin: auto;
+    border: none;
+    margin-bottom: 76px;
+}
+
+
+section.best-seller .product-slider .product{
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 8px;
+    width: 33%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+section.best-seller .product-slider .product:hover{
+    cursor: pointer;
+}
+
+section.best-seller .product-slider .product.new::before{
+    content: "New";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 5px 26px;
+    text-align: center;
+    color: white;
+    background-color: #614DC9;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+section.best-seller .product-slider .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+section.best-seller .product-slider .product .product-info{
+    margin-top: 50px;
+}
+section.best-seller .product-slider .product img{
+    max-width: 100%;
+}
+
+section.best-seller .product-slider .product h5{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--main-blue);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+section.best-seller .product-slider .product h4{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+section.best-seller .product-slider .product .price {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+section.best-seller .product-slider .product .price span.original-price{
+    margin: 0 10px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9B9B9B;
+    text-decoration: line-through;
+}
+
+section.best-seller .product-slider .product .price.discount{
+  color: #EC1C1C;
+}
+
+
+section.best-seller .product-slider .product .price h3{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section.best-seller .product-slider .product button{
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    width: 220px;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+section.best-seller .product-slider .product:hover button{
+    border: 1px solid #33C6DD;
+    background-color:#33C6DD;
+    color: white;
+    cursor: pointer;
+}
+
+section.newsletter{
+    background-color: #f5f5f5;
+    width: 955px;
+    max-width: 100%;
+    margin: 80px auto;
+    padding: 72px 0;
+    text-align: center;
+}
+
+section.newsletter h3{
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+section.newsletter p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+section.newsletter input[type=email]{
+    width: 320px;
+    height: 49px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    border-radius: 25px 0 0 25px;
+    padding: 0;
+    padding-left: 24px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+section.newsletter button[type=submit]{
+    width: 145px;
+    height: 49px;
+    border-radius: 0 25px 25px 0;
+    background-color: #614DC9;
+    border: 1px solid #614DC9;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: white;
+    padding: 0 36px;
+    text-transform: uppercase;
+}
+
+section.newsletter button[type=submit]:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: #614DC9;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #3E3E3E;
+    color: white;
+    padding: 60px 0;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    width: 955px;
+    max-width: 100%;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+
+}
+
+footer .container ul li.list-title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+footer .container ul li{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+footer .container ul a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .container ul a:hover{
+    color: #33C6DD;
+}
+
+footer .container ul li:last-of-type{
+    margin-bottom: 0;
+}
+
+section.copyright{
+    text-align: center;
+    background-color: #2B2B2B;
+    padding: 18px 0;
+    color: #E0E0E0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/* ############################# */
+/* Styles for smaller desktop */
+/* ############################# */
+@media screen and (max-width:1440px){
+    .container{
+        width: 1180px;
+        max-width: 90%;
+    }
+
+    section.hero h1,
+    section.hero p{
+        margin-bottom: 12px;
+    }
+    section.hero h1{
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    section.hero p{
+            font-size: 18px;
+            line-height: 26px;
+    }
+
+    section.hero button{
+        font-size: 16px;
+    }
+
+    section.best-seller .product-slider .product h5{
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    section.best-seller .product-slider .product h4{
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    section.best-seller .product-slider .product .price {
+        margin-bottom: 6px;
+    }
+    
+    section.best-seller .product-slider .product .price span.original-price{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    section.best-seller .product-slider .product .price h3{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    section.best-seller .product-slider .product button{
+        height: 40px;
+        width: 180px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    section.newsletter{
+        width: 880px;
+        margin: 70px auto;
+        padding: 50px 0;
+    }
+    
+    section.newsletter h3{
+        font-size: 22px;
+    }
+    
+    section.newsletter p{
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 15px;
+    }
+    
+    section.newsletter input[type=email]{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    section.newsletter button[type=submit]{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    footer{
+        padding: 50px 0;
+    }
+    
+    footer .container{
+        width: 1180px;
+        max-width: 90%;
+    }
+    
+    
+    footer .container ul li.list-title{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    footer .container ul li{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    section.copyright{
+        padding: 14px 0;
+        font-size: 14px;
+    }
+    
+}
+
+
+/* ############################# */
+/* Styles for Tablets */
+/* ############################# */
+@media screen and (max-width:960px){
+    .container{
+        width: 92%;
+        max-width: 92%;
+    }
+
+    header nav ul li{
+        display: none;
+    }
+
+    header nav ul li.menu-icon{
+        display: inline-block;
+    }
+
+    section.hero h1,
+    section.hero p{
+        max-width: 377px;
+    }
+    section.hero h1{
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    section.hero p{
+            font-size: 16px;
+            line-height: 24px;
+    }
+
+    section.hero button{
+        font-size: 14px;
+    }
+
+    section.best-seller h2{
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 12px;
+    }
+    
+    section.best-seller hr{
+        margin-bottom: 48px;
+    }
+
+    section.best-seller .product-slider .product.new::before{
+        top: 6px;
+        right: 6px;
+        padding: 0.5px 13px;
+        font-weight: 700;
+        font-size: 11px;
+    }
+    
+
+    section.best-seller .product-slider .product h5{
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    
+    section.best-seller .product-slider .product h4{
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    
+    
+    section.best-seller .product-slider .product .price span.original-price{
+        font-size: 9px;
+    }
+    
+    section.best-seller .product-slider .product .price h3{
+        font-size: 16px;
+    }
+    
+    section.best-seller .product-slider .product button{
+        height: 36px;
+        width: 146px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    section.newsletter{
+        width: 100%;
+        margin: 48px auto;
+    }
+    
+    footer .container{
+        width: 92%;
+        max-width: 92%;
+    }
+}
+
+
+/* ############################# */
+/* Styles for Mobiles */
+/* ############################# */
+@media screen and (max-width:576px){
+    .container{
+        width: 92%;
+        max-width: 92%;
+    }
+
+    header section.logo{
+        font-size: 18px;
+    }
+
+    section.hero .hero-content{
+        position:initial; 
+        text-align: center; 
+        margin-top: 26px;
+    }
+
+    section.hero .container{
+        align-items: center ; 
+    }
+
+    section.hero h1{
+        margin-bottom: 32px;
+        font-size: 32px;
+        line-height: 38px;
+        color: black;
+    }
+
+    section.hero p{
+            display: none;
+    }
+
+    section.best-seller .product-slider .product{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    section.best-seller .product-slider .product:last-of-type{
+        margin-bottom: 0;
+    }
+
+    section.best-seller .product-slider .container{
+        flex-wrap: wrap;
+    }
+
+    section.best-seller .product-slider .product h4{
+        font-size: 14px;
+    }
+    
+    section.best-seller .product-slider .product .price span.original-price{
+        font-size: 11px;
+    }
+    
+    section.best-seller .product-slider .product .price h3{
+        font-size: 20px;
+    }
+    
+    section.best-seller .product-slider .product button{
+        height: 36px;
+        width: 190px;
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    section.newsletter{
+        margin: 64px auto;
+        padding: 44px 0;
+    }
+
+    section.newsletter input[type=email]{
+        width: 210px;
+    }
+    
+    section.newsletter button[type=submit]{
+        width: 100px;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0 20px;
+        
+    }
+    
+    footer{
+        padding: 48px 0;
+    }
+
+    footer .container{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    footer ul{
+        width: 100%;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    
+    footer ul:last-of-type{
+        margin-bottom: 0;
+    }
+}
